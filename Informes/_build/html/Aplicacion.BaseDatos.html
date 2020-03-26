@@ -1,0 +1,309 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="[es]">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Base de Datos &#8212; ProyectoDI  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Pedidos" href="Aplicacion.Pedidos.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-Aplicacion.BaseDatos.SQLiteMetodos">
+<span id="base-de-datos"></span><h1>Base de Datos<a class="headerlink" href="#module-Aplicacion.BaseDatos.SQLiteMetodos" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="Aplicacion.BaseDatos.SQLiteMetodos.cerrar_conexion">
+<code class="descclassname">Aplicacion.BaseDatos.SQLiteMetodos.</code><code class="descname">cerrar_conexion</code><span class="sig-paren">(</span><em>conn</em><span class="sig-paren">)</span><a class="headerlink" href="#Aplicacion.BaseDatos.SQLiteMetodos.cerrar_conexion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Función que cierra la base de datos.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>conn</strong> -- Conexion de a la base.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Ninguno.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Aplicacion.BaseDatos.SQLiteMetodos.crearTabla">
+<code class="descclassname">Aplicacion.BaseDatos.SQLiteMetodos.</code><code class="descname">crearTabla</code><span class="sig-paren">(</span><em>conn</em>, <em>crear_tabla_sql</em><span class="sig-paren">)</span><a class="headerlink" href="#Aplicacion.BaseDatos.SQLiteMetodos.crearTabla" title="Permalink to this definition">¶</a></dt>
+<dd><p>Crea una tabla.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>conn</strong> -- Objecto Connection</li>
+<li><strong>crear_tabla_sql</strong> -- Create table statement</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Ninguno.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Aplicacion.BaseDatos.SQLiteMetodos.crear_conexion">
+<code class="descclassname">Aplicacion.BaseDatos.SQLiteMetodos.</code><code class="descname">crear_conexion</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Aplicacion.BaseDatos.SQLiteMetodos.crear_conexion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Crea una conexion .</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Param:</th><td class="field-body">Ninguno.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Objeto Connection.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Aplicacion.BaseDatos.SQLiteMetodos.deleteClientes">
+<code class="descclassname">Aplicacion.BaseDatos.SQLiteMetodos.</code><code class="descname">deleteClientes</code><span class="sig-paren">(</span><em>dni</em><span class="sig-paren">)</span><a class="headerlink" href="#Aplicacion.BaseDatos.SQLiteMetodos.deleteClientes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Elimina un cliente dado su dni.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dni</strong> -- Dni del cliente a eliminar.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Ningún parámetro es devuelto.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Aplicacion.BaseDatos.SQLiteMetodos.deleteProductos">
+<code class="descclassname">Aplicacion.BaseDatos.SQLiteMetodos.</code><code class="descname">deleteProductos</code><span class="sig-paren">(</span><em>dni</em><span class="sig-paren">)</span><a class="headerlink" href="#Aplicacion.BaseDatos.SQLiteMetodos.deleteProductos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Elimina los productos por dni.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dni</strong> -- Dni .</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Ninguno.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Aplicacion.BaseDatos.SQLiteMetodos.insertClientes">
+<code class="descclassname">Aplicacion.BaseDatos.SQLiteMetodos.</code><code class="descname">insertClientes</code><span class="sig-paren">(</span><em>dni</em>, <em>nombre</em>, <em>apellidos</em>, <em>sexo</em>, <em>direccion</em>, <em>telefono</em><span class="sig-paren">)</span><a class="headerlink" href="#Aplicacion.BaseDatos.SQLiteMetodos.insertClientes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inserta una nueva fila en la tabla Clientes.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>dni</strong> -- El Dni</li>
+<li><strong>nombre</strong> -- El nombre</li>
+<li><strong>apellidos</strong> -- Los Apellidos</li>
+<li><strong>sexo</strong> -- El Sexo del cliente</li>
+<li><strong>direccion</strong> -- La direccion</li>
+<li><strong>telefono</strong> -- El telefono</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Ninguno.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Aplicacion.BaseDatos.SQLiteMetodos.insertProductos">
+<code class="descclassname">Aplicacion.BaseDatos.SQLiteMetodos.</code><code class="descname">insertProductos</code><span class="sig-paren">(</span><em>id</em>, <em>dni</em>, <em>nombre</em>, <em>precio</em>, <em>cantidad</em><span class="sig-paren">)</span><a class="headerlink" href="#Aplicacion.BaseDatos.SQLiteMetodos.insertProductos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inserta una nueva fila en la tabla Productos.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>id</strong> -- id int</li>
+<li><strong>dni</strong> -- Dni text</li>
+<li><strong>nombre</strong> -- nombre text</li>
+<li><strong>precio</strong> -- Precio float</li>
+<li><strong>cantidad</strong> -- Cantidad int</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Ningún parámetro devuelto.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Aplicacion.BaseDatos.SQLiteMetodos.main">
+<code class="descclassname">Aplicacion.BaseDatos.SQLiteMetodos.</code><code class="descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Aplicacion.BaseDatos.SQLiteMetodos.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="Aplicacion.BaseDatos.SQLiteMetodos.selectClientes">
+<code class="descclassname">Aplicacion.BaseDatos.SQLiteMetodos.</code><code class="descname">selectClientes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Aplicacion.BaseDatos.SQLiteMetodos.selectClientes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select de los clientes.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Param:</th><td class="field-body">Ninguno.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Lista de clientes.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Aplicacion.BaseDatos.SQLiteMetodos.selectClientesPorDni">
+<code class="descclassname">Aplicacion.BaseDatos.SQLiteMetodos.</code><code class="descname">selectClientesPorDni</code><span class="sig-paren">(</span><em>dni</em><span class="sig-paren">)</span><a class="headerlink" href="#Aplicacion.BaseDatos.SQLiteMetodos.selectClientesPorDni" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select de clientes por dni.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dni</strong> -- Dni.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Lista de datos.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Aplicacion.BaseDatos.SQLiteMetodos.selectDniClientes">
+<code class="descclassname">Aplicacion.BaseDatos.SQLiteMetodos.</code><code class="descname">selectDniClientes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Aplicacion.BaseDatos.SQLiteMetodos.selectDniClientes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select de los dni.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Param:</th><td class="field-body">Ninguno.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Lista de dni .</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Aplicacion.BaseDatos.SQLiteMetodos.selectProductos">
+<code class="descclassname">Aplicacion.BaseDatos.SQLiteMetodos.</code><code class="descname">selectProductos</code><span class="sig-paren">(</span><em>dni</em><span class="sig-paren">)</span><a class="headerlink" href="#Aplicacion.BaseDatos.SQLiteMetodos.selectProductos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select de productos por dni.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dni</strong> -- Dni del cliente.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Lista con productos.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Aplicacion.BaseDatos.SQLiteMetodos.updateClientes">
+<code class="descclassname">Aplicacion.BaseDatos.SQLiteMetodos.</code><code class="descname">updateClientes</code><span class="sig-paren">(</span><em>dni</em>, <em>nombre</em>, <em>apellidos</em>, <em>sexo</em>, <em>direccion</em>, <em>telefono</em><span class="sig-paren">)</span><a class="headerlink" href="#Aplicacion.BaseDatos.SQLiteMetodos.updateClientes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Modifica los datos de un cliente existente dado su dni.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>dni</strong> -- Dni text</li>
+<li><strong>nombre</strong> -- Nombre text</li>
+<li><strong>apellidos</strong> -- Apellidos text</li>
+<li><strong>sexo</strong> -- Sexo text</li>
+<li><strong>direccion</strong> -- Direccion text</li>
+<li><strong>telefono</strong> -- Telefono text</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Ningún parámetro es devuelto.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, igonzaleziglesias.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.7</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/Aplicacion.BaseDatos.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

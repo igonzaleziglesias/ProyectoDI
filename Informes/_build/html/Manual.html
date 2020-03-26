@@ -1,0 +1,139 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="[es]">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Manual &#8212; ProyectoDI  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Gestion de Clientes" href="Aplicacion.GestionClientes.html" />
+    <link rel="prev" title="Welcome to ProyectoDI&#39;s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="manual">
+<h1>Manual<a class="headerlink" href="#manual" title="Permalink to this headline">¶</a></h1>
+<p>Esta aplicación funciona en ubuntu con Gtk3.
+La aplicación simula un programa de gestión de pedidos.
+Composicion:</p>
+<ul>
+<li><dl class="first docutils">
+<dt>Varios formularios, entre ellos:</dt>
+<dd><ul class="first last">
+<li><p class="first">Tenemos un menu con 4 opciones:</p>
+<blockquote>
+<div><blockquote>
+<div><img alt="_images/Menu.jpg" src="_images/Menu.jpg" />
+</div></blockquote>
+<ul>
+<li><p class="first">Gestión de clientes: Añadir, modificar o eliminar.</p>
+<blockquote>
+<div><img alt="_images/GestionClientes.jpg" src="_images/GestionClientes.jpg" />
+</div></blockquote>
+</li>
+<li><p class="first">Gestión de productos: añadis productos.</p>
+<blockquote>
+<div><img alt="_images/GestionProductos.jpg" src="_images/GestionProductos.jpg" />
+</div></blockquote>
+</li>
+<li><p class="first">Pedidos: Lista de  clientes y productos asignados a cada cliente. y generamos facturas o un informe de los clientes.</p>
+<blockquote>
+<div><img alt="_images/Pedidos.jpg" src="_images/Pedidos.jpg" />
+</div></blockquote>
+</li>
+<li><p class="first">Salir: para salir de la aplicación.</p>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Utilización de  SQLite en modo local, en la que se crean dos tablas,  clientes y productos.</p>
+</li>
+<li><p class="first">Se generan los informes usando Reportlab.</p>
+</li>
+<li><dl class="first docutils">
+<dt>El funcionamiento consta de un menu con 4 opciones:</dt>
+<dd><ul class="first last simple">
+<li>Gestión de clientes permite añadir nuevos clientes, modificarlos a traves de un comboBox seleccionando su dni
+y eliminarlos.</li>
+<li>Gestión de productos en la que podemos asignar productos a los diferentes clientes clientes.</li>
+<li>Pedidos en el que podemos listar clientes y sus productos asignados mediante Treeview
+y crear factura para el cliente o generar una lista de todos los clientes.</li>
+<li>Salir permite cerrar el programa.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Además en cualquier momento podemos cerrar el programa dandole a la X o volver al menu con el boton volver</p>
+</li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, igonzaleziglesias.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.7</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/Manual.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
